@@ -5,6 +5,11 @@ import App from './App';
 import  'antd/dist/antd.less'
 
 import reportWebVitals from './reportWebVitals';
+import memomyUtils from './util/memomyUtils'
+import storyUtils from './util/storageUtils'
+const user = storyUtils.getUser()
+memomyUtils.user = user
+console.log(user);
 ReactDOM.render(
   <React.StrictMode>
     <App />
