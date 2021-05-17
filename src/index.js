@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import  'antd/dist/antd.less'
-
+import {Provider} from 'react-redux'
+import store from './redux/store.jsx'
 import reportWebVitals from './reportWebVitals';
 import memomyUtils from './util/memomyUtils'
 import storyUtils from './util/storageUtils'
@@ -12,7 +13,10 @@ memomyUtils.user = user
 console.log(user);
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

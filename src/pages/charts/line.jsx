@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Skin extends Component {
+export default class line extends Component {
   render() {
     return (
       <div>
-        Skin
+        line
       </div>
     )
   }
